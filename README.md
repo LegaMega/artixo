@@ -1,16 +1,24 @@
 # ARTIXO
 
-A modern, minimalistic online art gallery built for the web.
-ARTIXO provides a seamless experience for browsing and displaying my artwork.
+ARTIXO is a modern, minimalistic web-based art gallery.
+It is designed as a quiet, museum-like environment for displaying my digital artwork.
 
 ## Technologies
-• **Front-end**: React.js, JavaScript (ES6+)
-• **Styling**: CSS
-• **Back-end**: Node.js
-• **Build tool**: Vite
+- **Front-end**: React, JavaScript (ES6+)
+- **Styling**: CSS
+- **Back-end**: Node.js
+- **Build tool**: Vite
 
 ## Getting started
 
-Follow these steps to get the project running locally on your machine.
-
 ### Prequisities
+
+Ensure [Node.js](https://nodejs.org/en) is installed on your system.
+
+### Installation
+
+1. **Clone the repository**
+    ```bash
+    git clone <repository-url>
+
+### 
