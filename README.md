@@ -38,4 +38,4 @@ Ensure [Node.js](https://nodejs.org/en) is installed on your system.
    The application will be available at http://localhost:5173.
    
 ### License
-The ARTIXO logo and artwork on ARTIXO fall under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
+The ARTIXIC logo and artwork on ARTIXIC fall under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
