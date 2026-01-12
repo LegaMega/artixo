@@ -12,7 +12,7 @@ It is designed as a quiet, museum-like environment for displaying digital artwor
 
 ## Getting started
 
-### Prequisities
+### Prerequisites
 
 Ensure [Node.js](https://nodejs.org/en) is installed on your system.
 
