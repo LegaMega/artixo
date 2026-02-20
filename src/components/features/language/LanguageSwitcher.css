@@ -1,8 +1,8 @@
 .language-switcher-button {
     align-items: center;
-    background: var(--color-background-language-button);
+    background: var(--color-background-language-switcher);
     border: none;
-    border-radius: 5px;
+    border-radius: var(--border-radius-language-switcher);
     color: var(--color-text-language-switcher);
     cursor: pointer;
     display: flex;
@@ -13,7 +13,7 @@
 }
 
 .language-switcher-button:hover {
-    background: var(--color-background-language-button-hover);
+    background: var(--color-background-language-switcher-hover);
     transition: var(--transition-background);
 }
 
@@ -28,18 +28,43 @@
 .language-switcher-dropdown {
     background: var(--color-background-secondary);
     border: var(--border-language-switcher-dropdown);
+    border-radius: var(--border-radius-language-switcher);
     display: flex;
     flex-direction: column;
-    min-width: 6rem;
+    min-width: 10rem;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
     position: absolute;
     right: 0;
     top: 100%;
+    transform: translateY(-12px);
+    transition: var(--transition-opacity), var(--transition-transform);
     z-index: 1000;
+}
+
+.language-switcher-dropdown.open {
+    opacity: 1;
+    transform: translateY(-6px);
+    pointer-events: auto;
 }
 
 .language-switcher-dropdown-option {
     background: none;
     border: none;
+    border-radius: 0;
     color: var(--color-text-language-switcher-dropdown);
-    text-align: right;
+    cursor: pointer;
+    outline: none;
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+}
+
+.language-switcher-dropdown-option:hover {
+    background: var(--color-background-language-switcher-dropdown-option-hover);
+    border-radius: 0;
+    display: block;
+    overflow: hidden;
+    transition: var(--transition-background);
+    width: 100%;
 }

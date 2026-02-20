@@ -1,6 +1,6 @@
 :root {
     /* === Color palette ===  */
-
+    
     /* ==  White colors ==  */
     --steel-white-extra-bright: #FCFDFF;
     --steel-white-bright: #F7F8FA;
@@ -53,11 +53,14 @@
     /* = Button background colors = */
     --color-background-button: var(--color-background-tertiary);
     --color-background-button-hover: var(--color-background-quaternary);
-    --color-background-language-button: var(--color-background-button);
-    --color-background-language-button-hover: var(--color-background-button-hover);
-
+    
     --color-background-input: var(--color-background-secondary);
     --color-background-translation-button: var(--color-background-tertiary);
+
+    /* = Language switcher background color = */
+    --color-background-language-switcher: var(--color-background-button);
+    --color-background-language-switcher-hover: var(--color-background-button-hover);
+    --color-background-language-switcher-dropdown-option-hover: var(--color-background-button-hover);
 
     /* == Component text colors == */
     /* = Navbar text colors = */
@@ -71,7 +74,6 @@
     /* = Buttons = */
     --color-text-button: var(--color-text-tertiary);
     
-
     --color-text-input: var(--color-text-primary);
     --color-text-input-icon: var(--color-text-secondary);
     --color-text-translation-button: var(--color-text-secondary);
@@ -136,8 +138,6 @@
 
     /* == Width == */
     --width-navbar-item: 8rem;
-    --width-navbar-navigation-link: var(--width-navbar-item);
-    --width-navbar-language-button: var(--width-navbar-item);
 
     /* === Borders == */
     --border-primary: 1px solid var(--color-border-primary);
@@ -145,12 +145,17 @@
     --border-language-switcher-dropdown: var(--border-primary);
     --border-card: var(--border-primary);
 
+    /* === Border radius === */
+    --border-radius-primary: 5px;
+    --border-radius-language-switcher: var(--border-radius-primary);
+
     /* === Filters === */
     --filter-brightness: brightness(2.5);
 
     /* === Transitions === */
     --transition-background: background-color 0.2s ease-in-out;
     --transition-transform: transform 0.2s ease-in-out;
+    --transition-opacity: opacity 0.2s ease-in-out;
 }
 
 html,
