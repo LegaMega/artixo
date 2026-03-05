@@ -1,110 +1,149 @@
 :root {
-    /* ====== Colors ======  */
-    /* ====  White Colors ====  */
-    --steel-white-extra-bright: #FCFDFF;
-    --steel-white-bright: #F7F8FA;
-    --steel-white-medium: #F2F3F5;
-    --steel-white-dark: #EDEEF0;
-    --steel-white-extra-dark: #E8E9EB;
+    /* === Colors === */
 
-    /* ==== Black Colors ==== */
-    --steel-black-extra-light: #3C414D;
-    --steel-black-light: #30343D;
-    --steel-black-medium: #23272E;
-    --steel-black-dark: #1B1C1F;
-    --steel-black-extra-dark: #0D0E0F;
+    /* == Global background colors == */
+    --color-background-primary: #F7F8FA;
+    --color-background-secondary: #FCFDFF;
+    --color-background-tertiary: #F2F3F5;
+    --color-background-quaternary: #EDEEF0;
+    --color-background-quinary: #E8E9EB;
 
-    /* ==== Logo Colors ==== */
-    --blue-sky: #73CCFF;
-    --blue-cornflower: #7386FF;
+    /* == Global text colors == */
+    --color-text-primary: #0D0E0F;
+    --color-text-secondary: #3C414D;
+    --color-text-tertiary: #30343D;
 
-    /* ====== Typography ====== */
-    /* ==== Font Families ==== */
+    /* == Global border colors == */
+    --color-border-primary: #ebeae8;
+
+    /* == Brand colors == */
+    --color-brand-primary: #73CCFF;
+    --color-brand-secondary: #7386FF;
+
+    /* == Component background colors == */
+    /* = Navbar background colors = */
+    --color-background-navbar: var(--color-background-secondary);
+    --color-background-navbar-current-page: var(--color-background-tertiary);
+    --color-background-navbar-hover: var(--color-background-quaternary);
+    --color-background-navbar-active: var(--color-background-quinary);
+
+    --color-background-footer: var(--color-background-secondary);
+    --color-background-section: var(--color-background-secondary);
+
+    --color-background-card: var(--color-background-secondary);
+
+    /* = Button background colors = */
+    --color-background-button: var(--color-background-tertiary);
+    --color-background-button-hover: var(--color-background-quaternary);
+    --color-background-button-active: var(--color-background-quinary);
+    
+    --color-background-input: var(--color-background-secondary);
+    --color-background-translation-button: var(--color-background-tertiary);
+
+    /* = Language switcher background color = */
+    --color-background-language-switcher: var(--color-background-button);
+    --color-background-language-switcher-hover: var(--color-background-button-hover);
+    --color-background-language-switcher-active: var(--color-background-button-active);
+    --color-background-language-switcher-dropdown-option-hover: var(--color-background-button-hover);
+    --color-background-language-switcher-dropdown-option-active: var(--color-background-button-active);
+
+    /* = Drawer navigation background color = */
+    --color-background-drawer-navigation: var(--color-background-secondary);
+
+    /* == Component text colors == */
+    /* = Navbar text colors = */
+    --color-text-navbar-logo: var(--color-text-primary);
+    --color-text-navbar-item: var(--color-text-tertiary);
+    --color-text-navbar-link: var(--color-text-navbar-item);
+
+    /* = Footer = */
+    --color-text-footer: var(--color-text-tertiary);
+
+    /* = Buttons = */
+    --color-text-button: var(--color-text-tertiary);
+    
+    --color-text-input: var(--color-text-primary);
+    --color-text-input-icon: var(--color-text-secondary);
+    --color-text-translation-button: var(--color-text-secondary);
+    --color-text-card-title: var(--color-text-primary);
+    --color-text-card-subtitle: var(--color-text-secondary);
+
+    /* = Language switcher text colors = */
+    --color-text-language-switcher: var(--color-text-tertiary);
+    --color-text-language-switcher-dropdown: var(--color-text-tertiary);
+
+    /* === Typography === */
+
+    /* == Font families == */
     --font-family-primary: 'Inter', sans-serif;
-    --font-family-logo: 'Montserrat', sans-serif;
+    --font-family-brand: 'Montserrat', sans-serif;
 
-    /* ==== Font sizes ==== */
-    /* == Base Font Size == */
+    /* == Font sizes == */
+
+    /* = Base Font Size = */
     --font-size-base: 1rem;
-
-    /* == Logo Font Sizes == */
-    --font-size-logo-mobile: 0.625rem;
-    --font-size-logo-desktop: 1rem;
-
-    /* == Navigation Font Sizes == */
-    --font-size-navigation-mobile: 0.5rem;
-    --font-size-navigation-desktop: 0.75rem;
-
-    /* == Hero Font Sizes == */
-    --font-size-hero-title-mobile: 2.625rem;
-    --font-size-hero-title-desktop: 3.5rem;
-    --font-size-hero-subtitle-mobile: 1rem;
-    --font-size-hero-subtitle-desktop: 1.5rem;
-
-    /* == Section Headers Font Sizes == */
-    --font-size-section-mobile: 1rem;
-    --font-size-section-desktop: 1.5rem;
-
-    /* == Artwork Font Sizes == */
-    --font-size-art-title-mobile: 0.625rem;
-    --font-size-art-title-desktop: 1rem;
-    --font-size-art-subtitle-mobile: 0.5rem;
-    --font-size-art-subtitle-desktop: 0.75rem;
-
-    /* == Footer Font Sizes == */
-    --font-size-footer-mobile: 0.375rem;
-    --font-size-footer-desktop: 0.75rem;
 
     /* Add more font size variables for all pages, sections or other parts of the website (visitor and admin envorinments) */
 
-    /* ==== Font Weight ====*/
-    --font-weight-logo: 700;
+    /* == Font weight == */
     --font-weight-primary: 400;
+    --font-weight-brand: 700;
 
-    /* ==== Line Height ==== */
-    --line-height-extra-small: 0.5;
-    --line-height-small: 0.75;
-    --line-height-medium: 1.5;
-    --line-height-large: 3;
-    --line-height-extra-large: 4.5;
+    /* == Line height == */
+    /* Add line heights here based on convention line-height-[usage] */
 
-    /* ====== Spacing & Layout ====== */
-    --spacing-small: 0.5rem;
-    --spacing-medium: 1rem;
-    --spacing-large: 2rem;
-    --spacing-extra-large: 3.75rem;
-    /* Use this for left and right padding, remove this comment afterwards */
+    /* === Spacing & layout === */
+    /* == Height == */
+    --height-navbar: 5rem;
 
-    /* Add more spacing and layout code here*/
+    /* == Width == */
+    --width-navbar-item-primary: 8rem;
+    --width-navbar-item-primary-secondary: 5rem;
 
-    /* ====== Borders ====== */
-    --border-white-extra-dark: 1px solid var(--steel-white-extra-dark);
+    /* === Borders == */
+    --border-primary: 1px solid var(--color-border-primary);
+    --border-navbar: var(--border-primary);
+    --border-language-switcher-dropdown: var(--border-primary);
+    --border-card: var(--border-primary);
 
-    /* ====== Filters ====== */
+    /* === Border radius === */
+    --border-radius-primary: 5px;
+    --border-radius-language-switcher: var(--border-radius-primary);
+
+    /* === Filters === */
     --filter-brightness: brightness(2.5);
 
-    /* ====== Transitions ====== */
+    /* === Transitions === */
     --transition-background: background-color 0.2s ease-in-out;
-    --transition-filter: filter 0.2s;
+    --transition-background-secondary: background-color 0.1s ease-in-out;
+    --transition-transform: transform 0.2s ease-in-out;
+    --transition-opacity: opacity 0.2s ease-in-out;
 }
 
 html,
 body {
-    /* ====== Browser Layout ====== */
-    margin: 0;
-    padding: 0;
-
-    /* ====== Default Styling ====== */
-    background-color: var(--steel-white-bright);
-
-    /* ==== Default Typography ==== */
-    color: var(--steel-black-extra-dark);
+    background-color: var(--color-background-primary);
+    color: var(--color-text-primary);
     font-family: var(--font-family-primary);
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-primary);
     line-height: var(--line-height-medium);
+    margin: 0;
+    padding: 0;
 }
 
 a {
+    color: var(--color-text-tertiary);
+    font-size: var(--font-size-base);
     text-decoration: none;
+}
+
+button {
+    background: none;
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-base);
+}
+
+.lucide {
+    color: red; /* TODO: change this to variable value */
 }
