@@ -7,7 +7,7 @@
     background: var(--color-background-control-default);
     border: none;
     border-radius: var(--border-radius-language-switcher);
-    color: var(--color-text-language-switcher);
+    color: var(--color-text-ui);
     cursor: pointer;
     display: flex;
     gap: 0.2rem;
@@ -27,7 +27,7 @@
 }
 
 .language-switcher-icon {
-    color: #3C414D;
+    color: var(--color-icon-default);
     transition: var(--transition-transform);
 }
 
@@ -63,7 +63,7 @@
     background: none;
     border: none;
     border-radius: 0;
-    color: var(--color-text-language-switcher-dropdown);
+    color: var(--color-text-ui);
     cursor: pointer;
     outline: none;
     padding: 0.5rem 0.75rem;

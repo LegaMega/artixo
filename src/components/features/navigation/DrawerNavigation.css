@@ -89,7 +89,7 @@
 
 .drawer-navigation-link a {
     align-items: center;
-    color: var(--color-text-navbar-link);
+    color: var(--color-text-ui);
     display: flex;
     height: 100%;
     justify-content: flex-start;

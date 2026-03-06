@@ -1,5 +1,4 @@
 :root {
-    /* === Colors === */
     /* TODO: refactor color variables */
     /* NEW color variables */
 
@@ -27,82 +26,17 @@
     --color-text-3: #30343D;
     --color-text-4: #3C414D;
 
-    /* TODO: adjust variable names, ensure each name is applicable to the website */
-    /*
+    --color-text-logo: var(--color-text-0);
     --color-text-title: var(--color-text-0);
     --color-text-heading: var(--color-text-0);
     --color-text-subheading: var(--color-text-1);
     --color-text-body: var(--color-text-2);
-    --color-text-section: var(--color-text-3);
-    --color-text-muted: var(--color-text-4);
-    */
+    --color-text-ui: var(--color-text-3);
 
     /* OUTDATED color variables */
-    /* == Global background colors == */
-
-    /* == Global text colors == */
-    --color-text-primary: #0D0E0F;
-    --color-text-secondary: #3C414D;
-    --color-text-tertiary: #30343D;
 
     /* == Global border colors == */
     --color-border-primary: #ebeae8;
-
-    /* == Brand colors == */
-    --color-brand-primary: #73CCFF;
-    --color-brand-secondary: #7386FF;
-
-    /* == Component background colors == */
-    /* = Navbar background colors = */
-    --color-background-navbar: var(--color-background-secondary);
-    --color-background-navbar-current: var(--color-background-tertiary);
-    --color-background-navbar-hover: var(--color-background-quaternary);
-    --color-background-navbar-active: var(--color-background-quinary);
-
-    --color-background-footer: var(--color-background-secondary);
-    --color-background-section: var(--color-background-secondary);
-
-    --color-background-card: var(--color-background-secondary);
-
-    /* = Button background colors = */
-    --color-background-button: var(--color-background-tertiary);
-    --color-background-button-hover: var(--color-background-quaternary);
-    --color-background-button-active: var(--color-background-quinary);
-
-    --color-background-input: var(--color-background-secondary);
-    --color-background-translation-button: var(--color-background-tertiary);
-
-    /* = Language switcher background color = */
-    --color-background-language-switcher: var(--color-background-button);
-    --color-background-language-switcher-hover: var(--color-background-button-hover);
-    --color-background-language-switcher-active: var(--color-background-button-active);
-    --color-background-language-switcher-dropdown-option-hover: var(--color-background-button-hover);
-    --color-background-language-switcher-dropdown-option-active: var(--color-background-button-active);
-
-    /* = Drawer navigation background color = */
-    --color-background-drawer-navigation: var(--color-background-secondary);
-
-    /* == Component text colors == */
-    /* = Navbar text colors = */
-    --color-text-navbar-logo: var(--color-text-primary);
-    --color-text-navbar-item: var(--color-text-tertiary);
-    --color-text-navbar-link: var(--color-text-navbar-item);
-
-    /* = Footer = */
-    --color-text-footer: var(--color-text-tertiary);
-
-    /* = Buttons = */
-    --color-text-button: var(--color-text-tertiary);
-
-    --color-text-input: var(--color-text-primary);
-    --color-text-input-icon: var(--color-text-secondary);
-    --color-text-translation-button: var(--color-text-secondary);
-    --color-text-card-title: var(--color-text-primary);
-    --color-text-card-subtitle: var(--color-text-secondary);
-
-    /* = Language switcher text colors = */
-    --color-text-language-switcher: var(--color-text-tertiary);
-    --color-text-language-switcher-dropdown: var(--color-text-tertiary);
 
     /* === Typography === */
 
@@ -155,7 +89,7 @@
 html,
 body {
     background-color: var(--color-surface-0);
-    color: var(--color-text-primary);
+    color: var(--color-text-body);
     font-family: var(--font-family-primary);
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-primary);
@@ -165,7 +99,7 @@ body {
 }
 
 a {
-    color: var(--color-text-tertiary);
+    color: var(--color-text-ui);
     font-size: var(--font-size-base);
     text-decoration: none;
 }
@@ -177,6 +111,5 @@ button {
 }
 
 .lucide {
-    color: red;
-    /* TODO: change this to variable value */
+    color: var(--color-icon-default);
 }
