@@ -27,41 +27,48 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    max-width: 30rem;
     position: absolute;
     right: 0;
     top: 0;
     transform: translateX(100%);
     transition: var(--transition-transform);
-    width: 50%;
+    width: min(50%, 30rem);
 }
 
 .drawer-navigation.is-open .drawer-navigation-panel {
     transform: translateX(0);
 }
 
-.drawer-navigation-close-menu {
+.drawer-navigation-close-panel {
     align-items: center;
     display: flex;
-    height: var(--height-drawer-navigation-item);
+    height: var(--height-navbar);
     justify-content: flex-end;
-    padding-right: var(--spacing-drawer-navigation-horizontal);
-    transition: var(--transition-background);
+    padding: 1rem;
     width: 100%;
 }
 
-/* TODO: change style of close button */
+.drawer-navigation-close-button {
+    align-items: center;
+    border: none;
+    border-radius: var(--border-radius-default);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    transition: var(--transition-background);
+}
 
-.drawer-navigation-close-menu:hover {
+.drawer-navigation-close-button:hover {
     background: var(--color-background-control-hover);
     cursor: pointer;
 }
 
-.drawer-navigation-close-menu:active {
+.drawer-navigation-close-button:active {
     background: var(--color-background-control-active);
 }
 
-.drawer-navigation-close-menu-icon {
+.drawer-navigation-close-button-icon {
     color: var(--color-icon-default);
 }
 

@@ -9,13 +9,17 @@ const DrawerNavigation = ({ isOpen, onClose }) => {
 
             <div className='drawer-navigation-panel'>
                 <div
-                    className='drawer-navigation-close-menu'
-                    onClick={onClose}
+                    className='drawer-navigation-close-panel'
+                    
                 >
-                    <X
-                        className='drawer-navigation-close-menu-icon'
-                    />
-
+                    <button
+                        type='button'
+                        className='drawer-navigation-close-button'
+                        onClick={onClose}
+                        aria-label='Close drawer navigation'
+                    >
+                        <X className='drawer-navigation-close-button-icon' />
+                    </button>
                 </div>
 
                 <ul className='drawer-navigation-list'>
